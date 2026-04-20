@@ -1,0 +1,91 @@
+{
+  "title": "台灣衛生福利部飲食指南「份」換算表",
+  "source": "衛生福利部國民健康署 — 每日飲食指南（2018 年修訂版）",
+  "source_url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=544&pid=725",
+  "description": "衛福部以「份」為單位規範每日各類食物建議攝取量，每類食物「1份」的熱量和巨量營養素固定，方便計算每日攝取。本文件整理各類別的1份定義及碳水含量。",
+  "food_groups": [
+    {
+      "group": "全穀雜糧類",
+      "group_en": "Whole grains and starches",
+      "carbs_per_exchange_g": 15,
+      "calories_per_exchange": 70,
+      "protein_per_exchange_g": 2,
+      "fat_per_exchange_g": 0.5,
+      "description_zh": "1份 = 15g 可利用碳水 = 70 kcal",
+      "examples": [
+        { "food": "白米飯（熟）", "serving": "1/4 碗 (50g)", "exchange_units": 1.0 },
+        { "food": "糙米飯（熟）", "serving": "1/4 碗 (50g)", "exchange_units": 1.0 },
+        { "food": "白吐司", "serving": "1 片 (30g)", "exchange_units": 1.0 },
+        { "food": "饅頭", "serving": "1/3 個 (30g)", "exchange_units": 1.0 },
+        { "food": "地瓜（生）", "serving": "1/2 個小 (55g)", "exchange_units": 1.0 },
+        { "food": "玉米（整根）", "serving": "1/3 根 (65g)", "exchange_units": 1.0 },
+        { "food": "芋頭（生）", "serving": "55g", "exchange_units": 1.0 },
+        { "food": "燕麥片（乾）", "serving": "3 湯匙 (20g)", "exchange_units": 1.0 }
+      ]
+    },
+    {
+      "group": "水果類",
+      "group_en": "Fruits",
+      "carbs_per_exchange_g": 15,
+      "calories_per_exchange": 60,
+      "protein_per_exchange_g": 1,
+      "fat_per_exchange_g": 0.1,
+      "description_zh": "1份 = 15g 碳水 = 60 kcal。注意：每種水果密度不同，克數差異大",
+      "examples": [
+        { "food": "蘋果", "serving": "1 顆小 (130g)", "exchange_units": 1.0 },
+        { "food": "香蕉", "serving": "1/2 根中型 (70g)", "exchange_units": 1.0 },
+        { "food": "芭樂（珍珠）", "serving": "1 顆中 (155g)", "exchange_units": 1.0 },
+        { "food": "木瓜", "serving": "1/6 顆 (150g)", "exchange_units": 1.0 },
+        { "food": "鳳梨", "serving": "切塊 (130g)", "exchange_units": 1.0 },
+        { "food": "西瓜", "serving": "薄片 2 片 (250g)", "exchange_units": 1.0 },
+        { "food": "芒果（愛文）", "serving": "切塊 (110g)", "exchange_units": 1.0 },
+        { "food": "荔枝", "serving": "9 顆 (90g)", "exchange_units": 1.0 }
+      ]
+    },
+    {
+      "group": "乳品類",
+      "group_en": "Dairy",
+      "carbs_per_exchange_g": 12,
+      "calories_per_exchange_full_fat": 150,
+      "calories_per_exchange_low_fat": 120,
+      "calories_per_exchange_skim": 80,
+      "protein_per_exchange_g": 8,
+      "description_zh": "乳品類碳水來自乳糖（12g/份），熱量因脂肪含量不同（全脂/低脂/脫脂）",
+      "examples": [
+        { "food": "全脂牛奶", "serving": "240ml（1杯）", "exchange_units": 1.0, "carbs_g": 12 },
+        { "food": "低脂牛奶", "serving": "240ml", "exchange_units": 1.0, "carbs_g": 12 },
+        { "food": "無糖優格", "serving": "240g", "exchange_units": 1.0, "carbs_g": 12 },
+        { "food": "無糖希臘優格", "serving": "200g", "exchange_units": 0.8, "carbs_g": 9 }
+      ]
+    },
+    {
+      "group": "豆魚蛋肉類",
+      "group_en": "Proteins (legumes, fish, eggs, meat)",
+      "carbs_per_exchange_g": 0,
+      "calories_per_exchange": 55,
+      "protein_per_exchange_g": 7,
+      "description_zh": "蛋白質類食物碳水含量極低（接近 0g/份），不計入碳水份數。例外：豆腐類含少量碳水（1–3g/份）",
+      "low_carb_note": "蛋白質來源不需計入碳水份數，適合低碳飲食或糖尿病飲食計算"
+    },
+    {
+      "group": "蔬菜類",
+      "group_en": "Vegetables",
+      "carbs_per_exchange_g": 5,
+      "calories_per_exchange": 25,
+      "protein_per_exchange_g": 1,
+      "fat_per_exchange_g": 0.2,
+      "description_zh": "1份（煮熟）= 100g = 5g 碳水 = 25 kcal。蔬菜碳水少，膳食纖維豐富，通常不需嚴格計算份數",
+      "examples": [
+        { "food": "各種葉菜類（地瓜葉、空心菜、高麗菜等）", "serving": "煮熟 1 碗 (100g)", "exchange_units": 1.0 }
+      ],
+      "note": "根莖類蔬菜（玉米、地瓜、南瓜、芋頭）歸類在「全穀雜糧類」，碳水含量高，需計入主食份數"
+    }
+  ],
+  "daily_carb_guidelines": {
+    "source": "衛福部每日飲食指南（2018）",
+    "general_adult_range_g": "130–260",
+    "diabetic_individual_guidance": "糖尿病患者每日碳水攝取量應由醫師或糖尿病衛教師依個人情況制定，一般範圍為每餐 45–75g 碳水（依藥物和胰島素調整）",
+    "low_carb_diet_g": "50–130",
+    "ketogenic_g": "< 50"
+  }
+}

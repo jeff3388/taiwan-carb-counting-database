@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "台灣碳水計算資料項目（Taiwan Carb Counting Entry）",
+  "type": "object",
+  "required": ["id", "name_zh", "category", "serving_g", "serving_description_zh", "total_carbs_g", "fiber_g", "net_carbs_g", "taiwan_exchange_units", "gi_estimated", "source"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "唯一識別碼，kebab-case"
+    },
+    "name_zh": { "type": "string", "description": "中文食物名稱（含烹調方式）" },
+    "name_en": { "type": "string", "description": "英文名稱（可選）" },
+    "category": {
+      "type": "string",
+      "enum": ["staple", "fruit", "legume", "dairy", "vegetable", "snack"],
+      "description": "食物類別"
+    },
+    "serving_g": {
+      "type": "number",
+      "description": "參考份量（公克），對應衛福部「1份」或常用食用量"
+    },
+    "serving_description_zh": {
+      "type": "string",
+      "description": "份量的中文描述（如「1/4 碗」、「1 片」、「1 根小」）"
+    },
+    "total_carbs_g": {
+      "type": "number",
+      "description": "每份總碳水化合物（克），含膳食纖維"
+    },
+    "fiber_g": {
+      "type": "number",
+      "description": "每份膳食纖維（克）"
+    },
+    "net_carbs_g": {
+      "type": "number",
+      "description": "每份淨碳水 = total_carbs_g - fiber_g（克）"
+    },
+    "sugar_g": {
+      "type": "number",
+      "description": "每份糖分（克），為 total_carbs 的子集"
+    },
+    "calories_kcal": {
+      "type": "integer",
+      "description": "每份熱量（大卡）"
+    },
+    "taiwan_exchange_units": {
+      "type": "number",
+      "description": "衛福部飲食指南換算份數（1份主食/水果 = 15g 碳水）"
+    },
+    "gi_estimated": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "升糖指數（以葡萄糖=100為基準）"
+    },
+    "gi_classification": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "negligible"],
+      "description": "低 GI ≤55, 中 56–69, 高 ≥70"
+    },
+    "gl_per_serving": {
+      "type": "number",
+      "description": "升糖負荷 = GI × net_carbs_g / 100"
+    },
+    "diabetic_exchange_note_zh": {
+      "type": "string",
+      "description": "糖尿病飲食換算特別說明（可選）"
+    },
+    "source": { "type": "string", "description": "資料來源" },
+    "notes": { "type": "string", "description": "補充說明" },
+    "_meta": {
+      "type": "object",
+      "properties": {
+        "last_updated": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}
